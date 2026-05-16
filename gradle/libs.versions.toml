@@ -6,7 +6,7 @@ opentcs-commadapter-vda5050 = "0.30.0"
 checkstyle = "10.12.3"
 commons-io = "2.21.0"
 jakarta-annotation = "3.0.0"
-slf4j = "2.0.17"
+slf4j = "2.0.18"
 # Test dependency versions
 assertj = "3.27.7"
 hamcrest = "3.0"
