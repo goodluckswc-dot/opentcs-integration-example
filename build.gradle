@@ -53,7 +53,7 @@ distributions {
   }
 }
 
-task subDists {
+tasks.register('subDists') {
   dependsOn(':opentcs-example-kernel:installDist')
   dependsOn(':opentcs-example-kernelcontrolcenter:installDist')
   dependsOn(':opentcs-example-modeleditor:installDist')
@@ -74,7 +74,7 @@ distTar {
   dependsOn subDists
 }
 
-task distSrcZip(type: Zip) {
+tasks.register('distSrcZip', Zip) {
   archiveClassifier = 'src'
   from "${rootDir}"
 
@@ -105,8 +105,8 @@ build {
 }
 
 // tag::cloneTask
-task cloneProject(type: JavaExec) {
-  main = 'org.opentcs.scripts.CloneScript'
+tasks.register('cloneProject', JavaExec) {
+  mainClass = 'org.opentcs.scripts.CloneScript'
 
   classpath = sourceSets.main.runtimeClasspath
 

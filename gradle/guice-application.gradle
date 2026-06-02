@@ -8,13 +8,13 @@ run {
   classpath sourceSets.guiceConfig.output
 }
 
-task(debug, type:JavaExec) {
+tasks.register('debug', JavaExec) {
   dependsOn installDist
 
   doFirst {
     workingDir = run.workingDir
     enableAssertions = run.enableAssertions
-  
+
     main = run.main
     args = run.args
     classpath = run.classpath

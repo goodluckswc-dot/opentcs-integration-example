@@ -44,7 +44,7 @@ distributions {
 // plugin's start script generation.
 startScripts.enabled = false
 
-task release {
+tasks.register('release') {
   dependsOn build
   dependsOn installDist
 }

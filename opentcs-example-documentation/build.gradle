@@ -36,7 +36,7 @@ distributions {
   }
 }
 
-task unzipBaselineDoc(type: Copy) {
+tasks.register('unzipBaselineDoc', Copy) {
   File baselineDocZip = configurations.baselineDoc.singleFile
   from zipTree(baselineDocZip)
   into("$baselineDocsDir")
@@ -48,7 +48,7 @@ task unzipBaselineDoc(type: Copy) {
 }
 installDist.dependsOn unzipBaselineDoc
 
-task renderDocs {
+tasks.register('renderDocs') {
   dependsOn 'asciidoctor'
 }
 installDist.dependsOn renderDocs
