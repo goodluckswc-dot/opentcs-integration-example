@@ -16,6 +16,8 @@ configurations {
 }
 
 dependencies {
+  // Explicitly keep a dependency on the common subproject - this way, we pick up the customization name and version
+  // that we set there.
   implementation project(':opentcs-example-common')
 
   implementation libs.opentcs.modeleditor
