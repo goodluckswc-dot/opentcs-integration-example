@@ -1,7 +1,6 @@
 [versions]
 # openTCS dependency versions
-opentcs-baseline = "7.3.0"
-opentcs-commadapter-vda5050 = "0.33.0"
+opentcs-baseline = "7.5.0"
 # Other dependency versions
 checkstyle = "10.12.3"
 commons-io = "2.21.0"
@@ -19,7 +18,6 @@ jacocolog = "3.1.0"
 [libraries]
 # openTCS dependencies
 opentcs-api-injection = { group = "org.opentcs", name = "opentcs-api-injection", version.ref = "opentcs-baseline" }
-opentcs-commadapter-vda5050 = { group = "org.opentcs.commadapter.vehicle.vda5050", name = "opentcs-commadapter-vda5050", version.ref = "opentcs-commadapter-vda5050" }
 opentcs-common = { group = "org.opentcs", name = "opentcs-common", version.ref = "opentcs-baseline" }
 opentcs-kernel = { group = "org.opentcs", name = "opentcs-kernel", version.ref = "opentcs-baseline" }
 opentcs-kernelcontrolcenter = { group = "org.opentcs", name = "opentcs-kernelcontrolcenter", version.ref = "opentcs-baseline" }

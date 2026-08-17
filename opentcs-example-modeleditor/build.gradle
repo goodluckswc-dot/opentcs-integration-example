@@ -21,7 +21,6 @@ dependencies {
   implementation project(':opentcs-example-common')
 
   implementation libs.opentcs.modeleditor
-  implementation libs.opentcs.commadapter.vda5050
   plantoverviewJar group: 'org.opentcs', name: 'opentcs-modeleditor', version: libs.versions.opentcs.baseline.get(), ext: 'jar'
 }
 

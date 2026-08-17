@@ -21,7 +21,6 @@ dependencies {
   implementation project(':opentcs-example-common')
 
   implementation libs.opentcs.kernelcontrolcenter
-  implementation libs.opentcs.commadapter.vda5050
   kernelcontrolcenterJar group: 'org.opentcs', name: 'opentcs-kernelcontrolcenter', version: libs.versions.opentcs.baseline.get(), ext: 'jar'
 }
 
