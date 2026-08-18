@@ -3,7 +3,7 @@
 opentcs-baseline = "7.5.0"
 # Other dependency versions
 checkstyle = "10.12.3"
-commons-io = "2.21.0"
+commons-io = "2.22.0"
 jakarta-annotation = "3.0.0"
 slf4j = "2.0.18"
 # Test dependency versions
